@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로컬 스토리지(Local Storage)를 저장하는 함수</title>
+</head>
+<body>
+    <h3> 로컬 스토리지(Local Storage)를 저장하는 함수 : </h3>
+    <pre> /*해당 태그는 사용자가 작성하는 대로 공백이 그대로 표시됨.*/
+        function savetheLocal() {
+            var second = document.getElementById("second");
+            var thevalue = second.value;
+            localStorage.setItem(1, thevalue);
+            gettheLocal();
+        }
+    </pre>
+</body>
+</html>

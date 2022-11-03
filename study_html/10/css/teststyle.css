@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body {
+    font-family: "맑은 고딕", "고딕","굴림";
+}
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #0094ff;
+    background-image: url('../images/nav2.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.navi {
+    float: right;
+    width: 70%;
+    margin-top: 30px;
+}
+.navi ul {
+    float: right;
+    list-style: none;
+}
+.navi ul li{
+    display: inline ;
+    float: left;
+    margin: 15px;
+}
+.navi a, .navi a:visited {
+    color: white;
+    text-decoration: none;
+}
+.navi a:hover {
+    color: black;
+}
+section {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+}
+.multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    text-align: justify;
+}
+.multi .contain {
+    height: 630px;
+    border: 1px dotted black;
+    padding: 20px;      
+    break-before: column;
+}
+.content {
+    text-indent: 20px;
+}
+.bg1 {
+    text-indent: 40px;
+    background-image: url('../images/bone.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+#contain {
+    width: 800px;
+    height: 100%;
+}
+
+header {
+    height: 150px;
+    background: url('../images/nav2.jpg') right bottom no-repeat;
+    background-size: cover;
+}
+
+section {
+    margin-top : 10px;
+}
+
+h3 {
+    text-indent: 
+}
+.navi {
+    float: left;
+    width: 70%;
+    margin-top: 80px;
+}
+
+.navi ul {
+    list-style: none;
+}
+
+.navi ul li{
+    display: inline;
+    padding: 20px;
+}
+
+.navi a, .navi a:visited {
+    color:white;
+    font: bold;
+    text-decoration: none;
+}
+
+.navi a:hover {
+    color: yellow;
+    cursor: pointer; 
+}
+
+.con {
+    padding: 10px;
+   margin-bottom: 20px;
+   border: 1px dotted palevioletred;
+}
+
+.img {
+    background: url('../images/bone.png') left bottom no-repeat;
+
+}

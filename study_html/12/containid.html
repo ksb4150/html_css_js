@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+        li a{
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+        .flat {
+            background: blue;
+            color: white;
+        }
+        [class ~= "but"] { /*온전한 but의 형태로 존재해야만 가능*/
+            border: 2px solid black;
+            box-shadow: rbga(0, 0, 0, 0.4) 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#" class="but">메뉴 3</a></li>
+        <li><a href="#" class="flat but">메뉴4</a></li>
+        <li><a href="#" class="butter">메뉴5</a></li>
+        <li><a href="#" class="but-te">메뉴6</a></li>
+    </ul>
+</body>
+</html>

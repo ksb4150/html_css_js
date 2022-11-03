@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        label {
+            font-size: 14px;
+            line-height: 25px;
+        }
+        label em{
+            color: red;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset> /* 네모칸이 나옴 */
+            <labe>아이디 : <input type="text" id="user_id" size="10"></label>
+            <label><em>비밀번호 : <input type="password" id="user_pw" size="10"></em></label>
+            <input type="submit" value="로그인">
+            /*submit 누르면 폼에 있는 입력 값이 서버로 전송됨. key-id : value-입력 값 형식으로*/
+        </fieldset>
+    </form>
+</body>
+</html>
