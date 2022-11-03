@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const input = document.querySelector('input')
+            const inbutton = document.querySelector('#inbutton')
+            const cmbutton = document.querySelector('#cmbutton')
+            const inp = document.querySelector('#inp')
+            const cmp = document.querySelector('#cmp')
+
+            cmbutton.addEventListener('click', () => {
+                const inch = Number(input.value)
+                const cm = Number(input.value)
+                
+                if(isNaN(inch)) {
+                    inp.textContent = '숫자를 입력해주세요'
+                    cmp.textContent = '숫자를 입력해주세요'
+                    return
+                }
+
+                const in_cm = inch * 2.54
+                const cm_in = cm * 0.3937
+                inp.textContent = `${in_cm} cm`
+                cmp.textContent = `${cm_in} inch`
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text">inch<br>
+    <p id="inp"></p>
+    <br>
+    <input type="text">cm<br>
+    <p id="cmp"></p>
+
+    <button id="cmbutton">계산</button>
+</body>
+</html>

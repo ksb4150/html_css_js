@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createStudent(name, ko, en, math, sci) {
+            return { 
+                /* 면밀히 말하면 객체가 아님. 
+                   여기서의 name, ko, en, math, sci는
+                   각각의 지역변수를 선언해서 매개변수 값을 넣고 하나로 사용할 수 있게
+                   만들어준 거기 때문에 객체라고 말하기에는 어렵다.
+                   9-1-7에서는 name, ko, en, math, sci는 객체의 멤버(필드)이기 때문에
+                   this를 사용한다.
+                   :를 사용한 건 key, value를 이용한 딕셔너리라는 자료구조이고
+                   =는 필드에 값을 대입할 때 사용함
+                */
+                name : name,
+                ko : ko,
+                en : en,
+                math : math,
+                sci : sci,
+
+                getSum() {
+                    return this.ko + this.en + this.math + this.sci
+                },
+                getAverage() {
+                    return this.getSum() / 4
+                }, 
+                toString() {
+                    return `${this.name} \t ${this.getSum()}점 \t ${this.getAverage()}점\n`
+                }
+            }
+        }
+        //라이브러리 부 끝
+
+
+        const students = []
+            students.push(createStudent('구름', 87, 98, 88, 90))
+            students.push(createStudent('별이', 92, 98, 96, 88))
+            students.push(createStudent('겨울', 76, 96, 94, 86))
+            students.push(createStudent('바다', 98, 52, 98, 92))
+
+            let output = '이름 \t 총점 \t 평균 \n'
+            for(const s of students) {
+                output += s.toString()
+            }
+            console.log(output)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

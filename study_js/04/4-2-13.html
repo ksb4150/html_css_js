@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let output1 = ''
+        let output2 = ''
+
+        for(let i=1; i<=9; i++) {
+            for(let z=0; z<i; z++) {
+                output1 += '*'
+            }
+            output1 += '\n'
+        }
+        for(let i=8; i>0; i--) {
+            for(let z=0; z<i; z++ ) {
+                output2 += '*'
+            }
+            output2 += '\n'
+        }
+
+        console.log(output1)
+        console.log(output2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Square {
+            #length
+            //34번의 결과로 생성자에서 this.length = length를 통해 length가 새로 생김
+
+            constructor(length) {
+                this.length = length
+            }
+            
+            get length() {
+                return this.#length
+            }
+            get perimeter() {
+                return this.#length * 4
+            }
+            get area() {
+                return this.#length * this.#length
+            }
+            set length(length) {
+                if(length <= 0) {
+                    throw '길이는 0보다 커야 합니다.'
+                }
+                this.#length = length
+            }
+        }
+
+        const squareA = new Square(10)
+        console.log(`한 변의 길이: ${squareA.length}`) //get length 호출
+        console.log(`둘레: ${squareA.perimeter}`) //get perimeter 호출
+        console.log(`넓이: ${squareA.area}`) //get area 호출
+
+        const squareB = new Square(-10)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

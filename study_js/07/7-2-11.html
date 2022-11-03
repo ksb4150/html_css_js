@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imgs = document.querySelectorAll('img')
+
+            imgs.forEach((img) => {
+                img.addEventListener('contextmenu', (event) => {
+                    event.preventDefault()
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <img src="images/girltoflower.jpg" alt="꽃을 꺾고 있는 소녀">
+    <img src="images/girltobeach.jpg" alt="해변을 거닐며 책을 읽고 있는 소녀">
+    <img src="images/girltohandbook.jpg" alt="노트북으로 작업을 하고 있는 소녀">
+    <img src="images/girltoplay.jpg" alt="들판에서 기타를 치고있는 소녀">
+</body>
+</html>

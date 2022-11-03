@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#out").click(function() {
+                $("img").fadeOut("slow");
+            });
+            $("#in").click(function() {
+                $("img").fadeIn("slow");
+            });
+            $("#toggle").click(function() {
+                $("img").fadeToggle("slow");
+            });
+            $("#to50").click(function() {
+                $("img").fadeTo("slow", 0.5);
+            });
+            $("#to10").click(function() {
+                $("img").fadeTo("slow", 0.1);
+            });
+            $("#to100").click(function() {
+                $("img").fadeTo("slow", 1.0);
+            });
+            $("#rotateimg").click(function() {
+                $("img").toggleClass('rotate')
+            })
+        });
+    </script>
+    <style>
+        .rotate {
+            transform : rotate(90deg);
+            transition-duration : 2s;
+            position: relative;
+            left : 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="out">fadeOut</button>
+    <button id="in">fadeIn</button>
+    <button id="toggle">fadeToggle</button>
+    <button id="to50">opacity 50%</button>
+    <button id="to10">opacity 90%</button>
+    <button id="to100">opacity 0%</button>
+    <button id="rotateimg">rotate</button>
+    <p></p>
+    <img name="pic1" src="images/coco.jpg">
+</body>
+</html>

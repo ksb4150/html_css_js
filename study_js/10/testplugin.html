@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/slider-reverse-min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(".slider-wrapper").sliderReverse({
+
+animateType   :false,
+
+// auto-rotation speed
+
+autoPlaySpeed : 5000,
+
+// custom button text
+
+btnsText      : {
+
+  next      :"",
+
+  prev      :"",
+
+  play      :"",
+
+pause     :""
+
+},
+
+// pause on hover
+
+hoverPause    :true,
+
+// enable navigation
+
+navigation    :true,
+
+// animation speed
+
+speed         :"normal",
+
+// enable touch swipe
+
+swipe         :true,
+
+// swipe speed
+
+swipeLimit    : 100,
+
+ 
+
+// enable responsive layout
+
+responsive    :false,
+
+ 
+
+// width of the carousel
+
+width         :"100%"
+
+ 
+
+});
+
+    </script>
+</head>
+<body>
+    <div class="slider-wrapper">
+         <div class="slider-box" style="background-image: url('1.jpg');"></div>
+         <div class="slider-box" style="background-image: url('2.jpg');"></div>
+         <div class="slider-box" style="background-image: url('3.jpg');"></div>
+    </div>
+        
+</body>
+</html>
